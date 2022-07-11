@@ -1,0 +1,6 @@
+aws dynamodb delete-table --table-name Municipality
+aws dynamodb create-table --cli-input-json file://user.json
+
+aws dynamodb scan --table-name Municipality
+
+aws dynamodb list-tables
